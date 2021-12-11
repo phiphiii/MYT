@@ -7,15 +7,28 @@
             Make your text!
         </title>
         <link rel="icon" href="tf.png">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="maincss.css">
+        <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
         <div class="main_content">
-            test
+            <div id="app-6">
+                <div class="main_text">
+                    <a>{{ message }}</a>
+                </div>
+                <div class="options">
+                
+                    <input v-model="message">
+                </div>
+            </div>
+            <script>
+                var app6 = new Vue({
+                    el: '#app-6',
+                    data: {
+                        message: 'Type here anything you want!'
+                    }
+                })
+            </script>
         </div>
-        
-        <script src="" async defer></script>
     </body>
 </html>
