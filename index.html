@@ -9,16 +9,18 @@
         <link rel="icon" href="tf.png">
         <link rel="stylesheet" href="maincss.css">
         <script src="https://unpkg.com/vue"></script>
+        <script src="javascript.js"></script>
     </head>
     <body>
         <div class="main_content">
             <div id="app-6">
                 <div class="main_text">
-                    <a>{{ message }}</a>
+                    <a id="hotrod">{{ message }}</a>
                 </div>
                 <div class="options">
-                
-                    <input v-model="message">
+                    <input v-model="message" id="input_text">
+                    <input type="checkbox" onclick="dropShadow()" id="dropshadow"><a class="options_text">Drop shadow</a>
+                    <input type="checkbox" onclick="textoutline()" id="textoutline"><a class="options_text">Text Outline</a>
                 </div>
             </div>
             <script>
