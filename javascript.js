@@ -18,3 +18,7 @@ function textoutline(){
         text.classList.remove("textoutline");
     }
 }
+function udpdateFontSize(){
+    var fontsize = document.getElementById("fontSizeChange").value;
+    document.getElementById("hotrod").style.fontSize = ""+fontsize+"px";
+}
