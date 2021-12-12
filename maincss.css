@@ -14,20 +14,24 @@ body{
     color: white;
     background-color: rgb(80, 80, 80);
     padding: 20px;
-
+    float: left;
+    width: 960px;
     min-height: 540px;
     margin: auto;
 }
 #input_text{
-
-    width: 490px;
+    width: 310px;
     height: 50px;
 }
 .options{
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(60, 60, 60);
+    min-height: 540px;
     padding: 20px;
-    width: 500px;
-    margin: auto;
+    width: 320px;
+    float: left;
+}
+#fontSizeChange{
+    width: 40px;
 }
 .options_text{
     color: white;
@@ -35,7 +39,10 @@ body{
 .drop_shadow{
     filter: drop-shadow(4px 3px 2px black);
 }
-.textoutline{
+.text_center{
+    text-align: center;
+}
+.text_outline{
     text-shadow:
     -1px -1px 0 #000,
      0   -1px 0 #000,

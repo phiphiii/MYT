@@ -17,11 +17,15 @@
                 <div class="options">
                     <input v-model="message" id="input_text">
                     <p><input type="checkbox" onclick="dropShadow()" id="dropshadow"><a class="options_text drop_shadow">Drop shadow</a></p>
-                    <p><input type="checkbox" onclick="textoutline()" id="textoutline"><a class="options_text textoutline">Text Outline</a></p>
-                    <a class="options_text">Font size</a><input type="number" value="12" id="fontSizeChange">
-                    <button type="button" onclick="udpdateFontSize()">Update font size</button>
+                    <p><input type="checkbox" onclick="textoutline()" id="textoutline"><a class="options_text text_outline">Text outline</a></p>
+                    <p><input type="checkbox" onclick="textcenter()" id="textcenter"><a class="options_text">Center text</a></p>
+                    <p><input type="color" id="bgColor" value="#505050"><a class="options_text"> Background colour </a></p>
+                    <p><input type="color" id="txtColor" value="#ffffff"><a class="options_text"> Text colour </a></p>
+                    <p><input type="number" value="16" id="fontSizeChange"><a class="options_text"> Font size </a></p>
+                    <a class="options_text" style="font-size: 10px;">(Few things might have to be updated by clicking update button)</a>
+                    <button type="button" onclick="udpdateFontSize(); udpdateBgColor(); udpdateTxtColor();">Update</button></p>
                 </div>
-                <div class="main_text">
+                <div class="main_text" id="maintextdiv">
                     <a id="hotrod">{{ message }}</a>
                 </div>
                 
