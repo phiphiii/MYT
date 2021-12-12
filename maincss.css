@@ -5,8 +5,8 @@ body{
 }
 .main_content{
     padding-top: 30px;
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    height: 85%;
     word-wrap: break-word;
     margin: auto;
 }
@@ -15,20 +15,26 @@ body{
     background-color: rgb(80, 80, 80);
     padding: 20px;
     float: left;
-    width: 960px;
-    min-height: 540px;
+    width: 74%;
+    min-height: 700px;
+    height: 74%;
+
     margin: auto;
 }
 #input_text{
-    width: 310px;
-    height: 50px;
+    width: 320px;
+    height: 40px;
 }
 .options{
     background-color: rgb(60, 60, 60);
-    min-height: 540px;
-    padding: 20px;
-    width: 320px;
+    min-height: 740px;
+    width: 23%;
+
     float: left;
+}
+.text_options{
+    padding: 65px 20px 0px 20px;
+    
 }
 #fontSizeChange{
     width: 40px;
@@ -52,4 +58,24 @@ body{
      0    1px 0 #000,
     -1px  1px 0 #000,
     -1px  0   0 #000;
+}
+.text_positions{
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(120, 120, 120);
+    text-align: center;
+    padding: 12px;
+    float: left;
+    color: white;
+    width: 124px;
+    border-color: rgb(120, 120, 120);
+}
+.text_positions:hover{
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.text_positions_active{
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(60, 60, 60);
 }
