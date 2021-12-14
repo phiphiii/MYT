@@ -18,14 +18,24 @@ function textoutline(){
         text.classList.remove("text_outline");
     }
 }
-function textcenter(){
-    var textcenter = document.getElementById("textcenter");
-    var text = document.getElementById("maintextdiv");
-    if(textcenter.checked == true){
-        text.classList.add("text_center");
+function textpostion(){
+    var text = document.getElementById("maintextdiv")
+    const rbs = document.querySelectorAll('input[name="textpostion"]');
+    let selectedValue;
+    for(const rb of rbs){
+        if(rb.checked){
+            selectedValue = rb.value
+            break;
+        }
     }
-    else{
-        text.classList.remove("text_center");
+    if(selectedValue==1){
+        text.style.textAlign = "left";
+    }
+    if(selectedValue==2){
+        text.style.textAlign = "center";
+    }
+    if(selectedValue==3){
+        text.style.textAlign = "right";
     }
 }
 function udpdateFontSize(){
@@ -39,4 +49,19 @@ function udpdateBgColor(){
 function udpdateTxtColor(){
     var txtcolor = document.getElementById("txtColor").value;
     document.getElementById("hotrod").style.color = txtcolor;
+}
+function visibility(){
+    var textvisibility = document.getElementById("textvisibility");
+    if(textvisibility.checked==false){
+        document.getElementById("hotrod").style.visibility = "hidden";
+    }
+    else{
+        document.getElementById("hotrod").style.visibility = "visible";
+    }
+}
+function changeBackground() {
+    var input = document.getElementById("background").value;
+    localStorage.setItem("Background", input);
+    var result = localStorage.getItem("Background");
+    $('.main_text').css({ 'background-image': "url(" + result + ")" });
 }
