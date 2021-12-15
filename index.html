@@ -55,21 +55,25 @@
                         <p><input type="checkbox" onclick="dropShadow()" id="dropshadow"><a class="options_text drop_shadow">Drop shadow</a></p>
                         <p><input type="checkbox" onclick="textoutline()" id="textoutline"><a class="options_text text_outline">Text outline</a></p>
 
-                        <p><input type="radio" onclick="textpostion()" name="textpostion" id="leftcenter" checked value="1"><a class="options_text">Left text</a>
-                        <input type="radio" onclick="textpostion()" name="textpostion" id="textcenter" value="2"><a class="options_text">Center text</a>
-                        <input type="radio" onclick="textpostion()" name="textpostion" id="rightcenter" value="3"><a class="options_text">Right text</a></p>
-                        <p><input type="color" id="txtColor" value="#ffffff"><a class="options_text"> Text colour </a></p>
+                        <p><input type="radio" onclick="textpostionHor()" name="textpostionHor" id="textleft" checked value="1"><a class="options_text">Left text</a>
+                        <input type="radio" onclick="textpostionHor()" name="textpostionHor" id="textcenter" value="2"><a class="options_text">Center text</a>
+                        <input type="radio" onclick="textpostionHor()" name="textpostionHor" id="textright" value="3"><a class="options_text">Right text</a></p>
+
+                        <p><input type="radio" onclick="textpostionVer()" name="textpostionVer" id="toptext" checked value="1"><a class="options_text">Text at the top</a>
+                            <input type="radio" onclick="textpostionVer()" name="textpostionVer" id="bottomtext" value="2"><a class="options_text">Text at the bottom</a></p>
+
+                        <p><input type="color" id="txtColor" value="#000000"><a class="options_text"> Text colour </a></p>
                         <p><input type="number" value="16" id="fontSizeChange"><a class="options_text"> Font size </a></p>
                     </div>
                         <a class="betterheader">Background options</a><br>
-                        <p><input type="color" id="bgColor" value="#505050"><a class="options_text"> Background colour </a></p>
+                        <p><input type="color" id="bgColor" value="#ffffff"><a class="options_text"> Background colour </a></p>
                         <a class="options_text">Upload custom background</a>
                         <input type="file" name="" id="file" value="Click"><br>
                         <a class="options_text" style="font-size: 10px;">(Few things might have to be updated by clicking update button)</a>
-                        <button type="button" onclick="udpdateFontSize(); udpdateBgColor(); udpdateTxtColor();">Update</button></p>
+                        <button type="button" onclick="udpdateFontSize(); udpdateBgColor(); udpdateTxtColor(); textpostionVer();">Update</button></p>
                 </div>
                 <div class="main_text" id="maintextdiv">
-                    <a id="hotrod">{{ message }}</a>
+                    <div id="coffebreath"><a id="hotrod">{{ message }}</a></div>
                 </div>
                 
             </div>
@@ -81,6 +85,7 @@
                     }
                 })
             </script>
+            <footer><a>Make your text ©2021</a></footer>
         </div>
     </body>
 </html>
