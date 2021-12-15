@@ -7,7 +7,6 @@ body{
 }
 .main_content{
     position: relative;
-    padding-top: 75px;
     width: 85%;
     height: 85%;
     word-wrap: break-word;
@@ -21,7 +20,7 @@ body{
     width: 74%;
     height: 700px;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:100% 100%;
     position:relative;
     margin: auto;
 }
@@ -148,4 +147,7 @@ header{
   width: 100%;
   text-align: center;
   margin-top: -8px;
+}
+.updatebutton{
+  padding-top: 140px;
 }

@@ -8,6 +8,7 @@
         </title>
         <link rel="icon" href="tf.png">
         <link rel="stylesheet" href="maincss.css">
+        <link href='https://fonts.googleapis.com/css?family=Montez|Lobster|Josefin+Sans|Shadows+Into+Light|Pacifico|Amatic+SC:700|Orbitron:400,900|Rokkitt|Righteous|Dancing+Script:700|Bangers|Chewy|Sigmar+One|Architects+Daughter|Abril+Fatface|Covered+By+Your+Grace|Kaushan+Script|Gloria+Hallelujah|Satisfy|Lobster+Two:700|Comfortaa:700|Cinzel|Courgette' rel='stylesheet' type='maincss.css'>
         <script src="https://unpkg.com/vue"></script>
         <script src="javascript.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -72,8 +73,10 @@
                         <p><input type="color" id="bgColor" value="#ffffff"><a class="options_text"> Background colour </a></p>
                         <a class="options_text">Upload custom background</a>
                         <input type="file" name="" id="file" value="Click"><br>
-                        <a class="options_text" style="font-size: 10px;">(Few things might have to be updated by clicking update button)</a>
-                        <button type="button" onclick="udpdateFontSize(); udpdateBgColor(); udpdateTxtColor(); textpostionVer();">Update</button></p>
+                        <div class="updatebutton">
+                            <a class="options_text" style="font-size: 10px;">(Few things might have to be updated by clicking update button)</a>
+                            <button type="button" onclick="udpdateFontSize(); udpdateBgColor(); udpdateTxtColor(); textpostionVer();">Update</button>
+                        </div>
                 </div>
                 <div class="main_text" id="maintextdiv">
                     <div id="coffebreath"><a id="hotrod">{{ message }}</a></div>
@@ -89,6 +92,7 @@
                 })
             </script>
             <footer><a>Make your text ©2021</a></footer>
+            <!--Ta strona mogła zostać zrobiona lepiej, ale no cóż :))))))))))))-->
         </div>
     </body>
 </html>
